@@ -1,11 +1,11 @@
-.profile {
+.card {
   background-color: #f4f6f8;
   width: 600px;
   height: 720px;
   border: 0.5px solid #b3cace69;
   border-radius: 7px;
 }
-.description {
+.conteiner {
   padding: 40px 30px 35px 30px;
   display: flex;
   flex-direction: column;
@@ -26,16 +26,23 @@
   font-weight: 400;
   color: rgb(78, 92, 92);
 }
-.stats {
+.list {
+  display: flex;
   width: 100%;
-  height: 186px;
+  height: 160px;
+  background-color: #aabcc15d;
+  padding: 0px;
+}
+.stat {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-around;
-  border-top: 3px solid #6e898e69;
-  background-color: #aabcc15d;
+  /* border-top: 3px solid #6e898e69; */
+  /* background-color: #aabcc15d; */
 }
 .item:not(:last-child) {
-  border-right: 3px solid #6e898e69;
+  /* border-right: 3px solid #6e898e69; */
 }
 .item {
   width: 200px;
@@ -46,7 +53,7 @@
   align-items: center;
   gap: 10px;
 }
-.label {
+.stat {
   font-size: 22px;
   color: rgb(78, 92, 92);
 }

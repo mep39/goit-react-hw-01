@@ -1,30 +1,27 @@
-import css from "./Profile.module.css";
+import css from "../Profile/Profile.module.css";
 
 export const Profile = ({ image, name, tag, location, stats }) => {
   return (
-    <div className={}>
-      <div className={}>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-          alt="User avatar"
-        />
-        <p className={}>Petra Marica</p>
-        <p className={}>@pmarica</p>
-        <p className={}>Salvador, Brasil</p>
+    <div className={css.card}>
+      <div className={css.conteiner}>
+        <img src={image} alt="User avatar" className={css.avatar} />
+        <p className={css.name}>{name}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
-      <ul className={}>
-        <li className={}>
-          <span className={}>Followers</span>
-          <span className={}>1000</span>
+      <ul className={css.list}>
+        <li className={css.item}>
+          <span className={css.stat}>Followers</span>
+          <span className={css.quantity}>{stats.followers}</span>
         </li>
-        <li className={}>
-          <span className={}>Views</span>
-          <span className={}>2000</span>
+        <li className={css.item}>
+          <span className={css.stat}>Views</span>
+          <span className={css.quantity}>{stats.views}</span>
         </li>
-        <li className={}>
-          <span className={}>Likes</span>
-          <span className={}>3000</span>
+        <li className={css.item}>
+          <span className={css.stat}>Likes</span>
+          <span className={css.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>

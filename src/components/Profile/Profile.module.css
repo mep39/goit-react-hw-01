@@ -2,7 +2,7 @@
   background-color: #f4f6f8;
   width: 600px;
   height: 720px;
-  border: 0.5px solid #b3cace69;
+  border: 3px solid black;
   border-radius: 7px;
 }
 .conteiner {
@@ -14,6 +14,8 @@
 }
 .avatar {
   width: 320px;
+  border-radius: 50%;
+  background-color: black;
 }
 .name {
   font-size: 32px;
@@ -32,6 +34,8 @@
   height: 160px;
   background-color: #aabcc15d;
   padding: 0px;
+  /* border-radius: 7px; */
+  border-top: 3px solid #6e898e69;
 }
 .stat {
   width: 100%;
@@ -41,8 +45,11 @@
   /* border-top: 3px solid #6e898e69; */
   /* background-color: #aabcc15d; */
 }
-.item:not(:last-child) {
+.item:last-child {
   /* border-right: 3px solid #6e898e69; */
+  border-radius: 0 0 7px 0;
+  border-right: none;
+  border-left: none;
 }
 .item {
   width: 200px;
@@ -52,6 +59,8 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  border-right: 3px solid #6e898e69;
+  border-bottom: none;
 }
 .stat {
   font-size: 22px;
